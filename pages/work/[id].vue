@@ -1,16 +1,17 @@
 <template>
   <div>
     <Head>
-      <Title>Joshua | {{ id }}</Title>
+      <Title>Joshua | {{ info }}</Title>
       <!-- <Meta name="description" :content="project.description" /> -->
     </Head>
 
-    Projects details for {{ id }}
+    Projects details for {{ info }}
   </div>
 </template>
 
 <script setup>
-const { id } = useRoute().params;
+const id = useRoute().params;
+const info = await $fetch("/api/projects");
 
 // if (!project.id) {
 //   throw createError({ statusCode: 404, StatusMessage: "Project not found" });

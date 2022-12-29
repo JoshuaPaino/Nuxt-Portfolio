@@ -97,14 +97,15 @@
             <img :alt="proj.name" :src="proj.image" />
             <h3 class="text-2xl">{{ proj.name }}</h3>
             <p class="text-xl mb-8">{{ proj.desc }}</p>
-            <router-link :to="proj.to" class="text-blue-300">
+            <NuxtLink :to="`/work/${proj.id}`" class="text-blue-300">
               See More ->
-            </router-link>
+            </NuxtLink>
           </div>
         </div>
         <!--  -->
       </div>
     </FeaturedPanel>
+    {{ info }}
   </div>
 </template>
 
@@ -114,11 +115,10 @@
 }
 </style>
 
-<script setup lang="ts">
+<script setup>
 import LandingCard from "../components/landingCard.vue";
-
+const info = await $fetch("/api/projects");
 const featuredProjects = [
-  //
   {
     id: 1,
     name: "Work",
