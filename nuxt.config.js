@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  target: 'static',
     modules: [
-        '@nuxtjs/tailwindcss', 'nuxt-icon','@nuxtjs/color-mode',  '@vueuse/nuxt'
-      ],
-      colorMode: {
+        '@nuxtjs/tailwindcss', 'nuxt-icon','@nuxtjs/color-mode',  '@vueuse/nuxt',    '@nuxt/content'
+  ],  colorMode: {
         classSuffix: ''
       },
       tailwindcss: {
@@ -14,6 +14,9 @@ export default defineNuxtConfig({
         injectPosition: 0,
         viewer: true,
       },
+      buildModules: [
+        '@nuxt/image',
+      ],
       app:{
         head:{
             title: 'Application Head',

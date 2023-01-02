@@ -12,14 +12,14 @@
         </h1>
         <div class="flex flex-wrap -m-3 mb-20">
           <div class="w-full lg:w-auto p-3">
-            <button
+            <button @click="$router.push('/work')"
               class="font-heading w-full px-6 py-4 text-base text-gray-900 bg-yellow-300 hover:gray-100 rounded-md"
             >
               Check my Portfolio
             </button>
           </div>
           <div class="w-full lg:w-auto p-3">
-            <ButtonOverlay />
+            <ButtonOverlay @click="$router.push('/blog')" />
           </div>
         </div>
       </div>
@@ -79,33 +79,7 @@
         </div>
       </div>
     </div>
-    <FeaturedPanel>
-      <p class="text-center tracking-widest text-gray-500 font-bold">
-        Developer
-      </p>
-      <h2 class="text-center text-7xl text-indigo-900 mb-14 font-bold">
-        Featured Projects
-      </h2>
-      <div class="flex flex-wrap">
-        <!--  -->
-        <div
-          v-for="proj in featuredProjects"
-          :key="proj.id"
-          class="w-full sm:w-1/2 p-2"
-        >
-          <div class="w-full bg-white rounded-2xl p-4">
-            <img :alt="proj.name" :src="proj.image" />
-            <h3 class="text-2xl">{{ proj.name }}</h3>
-            <p class="text-xl mb-8">{{ proj.desc }}</p>
-            <NuxtLink :to="`/work/${proj.id}`" class="text-blue-300">
-              See More ->
-            </NuxtLink>
-          </div>
-        </div>
-        <!--  -->
-      </div>
-    </FeaturedPanel>
-    {{ info }}
+
   </div>
 </template>
 
@@ -117,7 +91,6 @@
 
 <script setup>
 import LandingCard from "../components/landingCard.vue";
-const info = await $fetch("/api/projects");
 const featuredProjects = [
   {
     id: 1,
@@ -148,13 +121,11 @@ const featuredProjects = [
     image: "/img/VPortfolio.JPG",
   },
 ];
-
 const codeRow1 = {
   Icon: "logos:vue",
   techName: "Vue",
   techDetails: "Front-End Framework",
 };
-
 const codeRow2 = [
   {
     id: 1,
@@ -183,7 +154,6 @@ const codeRow3 = [
     techDetails: "Front-End Framework",
   },
 ];
-
 const codeRow4 = [
   {
     id: 1,
@@ -205,4 +175,5 @@ const codeRow4 = [
   transform: v-bind(cardTransform);
   transition: transform 0.25s ease-out;
 } */
+
 </style>
