@@ -4,11 +4,7 @@ const { data: posts } = await useAsyncData("posts", () =>
 );
 
 
-defineProps<{
- 
-  MdImage: string,
 
-}>()
 </script>
 
 
@@ -32,7 +28,8 @@ defineProps<{
        >
          <div class="w-full bg-white rounded-2xl p-4">
            <NuxtLink :to="post._path" >
-           <img :alt="post.title" :src="`/img/${post.MdImage}`" />
+        
+           <img :alt="post.title" :src="post.image.src" />
            <h3 class="text-2xl">{{ post.title }}</h3>
            <p class="text-xl mb-8">{{ post.description }}</p>
            <p class="text-center">Click to see More</p>

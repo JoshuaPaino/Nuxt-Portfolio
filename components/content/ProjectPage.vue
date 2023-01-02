@@ -17,7 +17,7 @@
               class="max-w-full h-[40vh] object-fill  w-full rounded-lg shadow-lg object-cover"
               :src="`/img/${MdImage}`"
             />
-            
+            <slot name="image"/>
           </div>
           <div class="w-full  ml-auto mr-auto px-4">
             <div class="md:pr-12">
