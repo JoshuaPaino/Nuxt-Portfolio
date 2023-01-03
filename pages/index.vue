@@ -83,7 +83,7 @@
       <p class="text-center tracking-widest text-gray-500 font-bold">
         Developer
       </p>
-      <h2 class="text-center text-7xl text-indigo-900 mb-14 font-bold">
+      <h2 class="text-center text-7xl  mb-14 font-bold">
         Featured Projects
       </h2>
       <div class="flex flex-wrap">
@@ -92,7 +92,7 @@
           :key="proj.id"
           class="w-full sm:w-1/2 p-2"
         >
-          <div class="w-full bg-white rounded-2xl p-4">
+          <div class="w-full bg-[#F8F4EA] rounded-2xl p-4">
             <img :alt="proj.name" :src="proj.image" />
             <h3 class="text-2xl">{{ proj.name }}</h3>
             <p class="text-xl mb-8">{{ proj.desc }}</p>
