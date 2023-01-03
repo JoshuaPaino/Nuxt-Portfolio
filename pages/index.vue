@@ -13,7 +13,7 @@
         <div class="flex flex-wrap -m-3 mb-20">
           <div class="w-full lg:w-auto p-3">
             <button @click="$router.push('/work')"
-              class="font-heading w-full px-6 py-4 text-base text-gray-900 bg-[#579BB1] hover:gray-100 rounded-md"
+              class="font-heading w-full px-6 py-4 text-base hover:bg-blue-300 hover:text-black text-white dark:text-gray-900 bg-[#579BB1] hover:gray-100 rounded-md"
             >
               Check my Portfolio
             </button>
@@ -92,11 +92,11 @@
           :key="proj.id"
           class="w-full sm:w-1/2 p-2"
         >
-          <div class="w-full bg-[#F8F4EA] rounded-2xl p-4">
+          <div class="w-full bg-[#E1D7C6] shadow-lg rounded-2xl p-4">
             <img :alt="proj.name" :src="proj.image" />
             <h3 class="text-2xl">{{ proj.name }}</h3>
             <p class="text-xl mb-8">{{ proj.desc }}</p>
-            <NuxtLink :to="`/work/${proj.id}`" class="text-blue-300">
+            <NuxtLink :to="`/work/${proj.id}`" >
               See More ->
             </NuxtLink>
           </div>

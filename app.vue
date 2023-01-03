@@ -12,10 +12,10 @@ body, html {
   min-height: 100%;
 }
 body {
- background: '#F8F4EA';
+  background-color: #f8f8fa;
+  color: #55527c;
 
-  @apply dark:bg-slate-400 text-gray-800 dark:text-white
+  @apply dark:bg-slate-400 text-gray-800;
 }
-
 
 </style>
