@@ -23,7 +23,6 @@
 import Socials from "../Socials.vue";
 import DarkModeButton from "./DarkModeButton.vue";
 const Navlinks = [
-  //
   { id: 1, name: "Work", to: "work" },
   { id: 2, name: "Blog", to: "blog" },
   { id: 3, name: "Contact", to: "contact" },
@@ -34,6 +33,7 @@ const Navlinks = [
 <style scoped>
 .router-link-exact-active {
   color: blue;
+  
 }
 .navStyle {
   @apply hover:text-gray-200 text-lg;

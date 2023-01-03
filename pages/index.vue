@@ -90,15 +90,20 @@
         <div
           v-for="proj in featuredProjects"
           :key="proj.id"
-          class="w-full sm:w-1/2 p-2"
+          class="w-full sm:w-1/2 p-4 lg:p-8"
         >
-          <div class="w-full bg-[#E1D7C6] shadow-lg rounded-2xl p-4">
-            <img :alt="proj.name" :src="proj.image" />
-            <h3 class="text-2xl">{{ proj.name }}</h3>
-            <p class="text-xl mb-8">{{ proj.desc }}</p>
+          <div class="w-full bg-[#E1D7C6] hover:bg-[#ECE8DD] shadow-lg rounded-lg overflow-hidden">
             <NuxtLink :to="`/work/${proj.id}`" >
-              See More ->
-            </NuxtLink>
+            <img :alt="proj.name" :src="proj.image" />
+            <div class="p-4">
+              <h3 class="text-2xl">{{ proj.name }}</h3>
+            <p class="text-xl mb-8">{{ proj.desc }}</p>
+            
+    
+        <p class="text-center text-sm underline font-bold">View Project</p>
+            </div>
+          </NuxtLink>
+            
           </div>
         </div>
       </div>
@@ -120,6 +125,7 @@
 <script setup>
 import BlogCTA from "../components/BlogCTA.vue";
 import LandingCard from "../components/landingCard.vue";
+
 const featuredProjects = [
   {
     id: 1,

@@ -1,9 +1,8 @@
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <NuxtPage   />
   </NuxtLayout>
 </template>
-
 <style>
 body, html {
   padding: 0;
@@ -17,5 +16,6 @@ body {
 
   @apply dark:bg-slate-400 text-gray-800 dark:text-white;
 }
+
 
 </style>

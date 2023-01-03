@@ -18,7 +18,6 @@
 
 
 const sociallinks = [
-  //
   { id: 1, name: "Github", Icon: "ri:github-fill", to: "https://github.com/" },
   {
     id: 2,

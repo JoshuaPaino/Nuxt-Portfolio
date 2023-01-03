@@ -26,13 +26,16 @@ const { data: posts } = await useAsyncData("posts", () =>
      
          class="w-full lg:w-1/2 p-2"
        >
-         <div class="w-full bg-white rounded-2xl p-4 bg-[#E1D7C6] ">
+         <div class="w-full bg-white rounded-2xl bg-[#E1D7C6] rounded-lg overflow-hidden shadow-lg ">
            <NuxtLink :to="post._path" >
         
            <img :alt="post.title" :src="post.image.src" />
-           <h3 class="text-2xl">{{ post.title }}</h3>
+           <div class="p-6">
+            <h3 class="text-2xl">{{ post.title }}</h3>
            <p class="text-xl mb-8">{{ post.description }}</p>
            <p class="text-center">Click to see More</p>
+           </div>
+        
            </NuxtLink>
          </div>
        </div>

@@ -1,7 +1,7 @@
 
 
 <template>
-  <footer class="p-4 bg-gray-50 sm:p-6 dark:bg-gray-900">
+  <footer class="p-4 bg-gray-100 sm:p-6 dark:bg-gray-900">
     <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
             <a href="#"  class="flex items-center">
@@ -18,7 +18,7 @@
             :key="navLink.id"
             class="mb-4"
           >
-            <NuxtLink :to="`/${navLink.to}`">{{ navLink.name }}</NuxtLink>
+            <NuxtLink :to="navLink.to">{{ navLink.name }}</NuxtLink>
           </li>
           <nuxt-link to="contact">Contact</nuxt-link>
                   
@@ -77,12 +77,11 @@
 const Navlinks = [
 
   { id: 1, name: "Home", to: "/" },
-  { id: 2, name: "Work", to: "work" },
-  { id: 3, name: "Blog", to: "blog" },
+  { id: 2, name: "Work", to: "/work" },
+  { id: 3, name: "Blog", to: "/blog" },
 
 ];
 const sociallinks = [
-  //
   { id: 1, name: "Github", Icon: "ri:github-fill", to: "https://github.com/" },
   {
     id: 2,

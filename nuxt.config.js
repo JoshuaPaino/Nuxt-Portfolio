@@ -18,7 +18,9 @@ export default defineNuxtConfig({
         '@nuxt/image',
       ],
       app:{
+
         head:{
+          
             title: 'Application Head',
             htmlAttrs: {
                 lang: 'en'
