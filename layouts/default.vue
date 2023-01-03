@@ -5,7 +5,7 @@
     <main>
       <slot />
     </main>
-    <!--  -->
+   <VFooter />
   </div>
 </template>
 
@@ -18,4 +18,5 @@ h1 {
 
 <script setup>
 import Navbar from "~/components/layout/Navbar.vue";
+import VFooter from "../components/VFooter.vue";
 </script>

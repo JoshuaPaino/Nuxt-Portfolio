@@ -1,8 +1,8 @@
 <template>
   <div class="container px-4 mx-auto overflow-hidden">
-    <div class="flex flex-wrap justify-between -m-6 pt-32 pb-40">
+    <section class="flex flex-wrap justify-between -m-6 pt-32 pb-40">
       <div class="w-full lg:w-5/12 xl:w-1/2 p-6">
-        <p class="mb-5 font-heading text-gray-400 font-medium text-xl">
+        <p class="mb-5 font-heading dark:text-gray-800 text-gray-400 font-medium text-xl">
           Full Stack Developer
         </p>
         <h1
@@ -78,8 +78,36 @@
           <!-- Parent end -->
         </div>
       </div>
-    </div>
+    </section>
+    <FeaturedPanel>
+      <p class="text-center tracking-widest text-gray-500 font-bold">
+        Developer
+      </p>
+      <h2 class="text-center text-7xl text-indigo-900 mb-14 font-bold">
+        Featured Projects
+      </h2>
+      <div class="flex flex-wrap">
+        <div
+          v-for="proj in featuredProjects"
+          :key="proj.id"
+          class="w-full sm:w-1/2 p-2"
+        >
+          <div class="w-full bg-white rounded-2xl p-4">
+            <img :alt="proj.name" :src="proj.image" />
+            <h3 class="text-2xl">{{ proj.name }}</h3>
+            <p class="text-xl mb-8">{{ proj.desc }}</p>
+            <NuxtLink :to="`/work/${proj.id}`" class="text-blue-300">
+              See More ->
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+    </FeaturedPanel>
 
+
+    <BlogCTA />
+
+  
   </div>
 </template>
 
@@ -90,6 +118,7 @@
 </style>
 
 <script setup>
+import BlogCTA from "../components/BlogCTA.vue";
 import LandingCard from "../components/landingCard.vue";
 const featuredProjects = [
   {
