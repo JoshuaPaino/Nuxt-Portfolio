@@ -15,7 +15,7 @@ body {
   background-color: #f8f8fa;
   color: #55527c;
 
-  @apply dark:bg-slate-400 text-gray-800;
+  @apply dark:bg-slate-400 text-gray-800 dark:text-white;
 }
 
 </style>

@@ -26,7 +26,7 @@ const { data: posts } = await useAsyncData("posts", () =>
      
          class="w-full lg:w-1/2 p-2"
        >
-         <div class="w-full bg-white rounded-2xl p-4">
+         <div class="w-full bg-white rounded-2xl p-4 bg-[#E1D7C6] ">
            <NuxtLink :to="post._path" >
         
            <img :alt="post.title" :src="post.image.src" />
