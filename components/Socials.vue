@@ -43,7 +43,7 @@ const sociallinks = [
   @apply hover:text-gray-200 text-lg;
 }
 .socialStyle {
-  @apply hover:text-gray-200 text-3xl;
+  @apply hover:text-[#579BB1] text-3xl;
 }
 .navMargin {
   @apply mr-9;

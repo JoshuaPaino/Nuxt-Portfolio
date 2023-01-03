@@ -1,12 +1,13 @@
 module.exports = {
     darkMode: 'class',
-    colors: {
-      'blue': '#1fb6ff',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
+    theme: {
+      colors: {
+        blue: '#579BB1',
+        Dbiege: '#E1D7C6',
+        LBiege: '#ECE8DD',
+        cream: '#F8F4EA',
+        waa: '#FFFBE9',
+      },
     },
+   
   }

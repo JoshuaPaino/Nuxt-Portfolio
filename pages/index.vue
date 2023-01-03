@@ -1,6 +1,6 @@
 <template>
   <div class="container px-4 mx-auto overflow-hidden">
-    <section class="flex flex-wrap justify-between -m-6 pt-32 pb-40">
+    <section class="flex flex-wrap justify-between -m-6 pt-32 pb-40 lg:mb-10">
       <div class="w-full lg:w-5/12 xl:w-1/2 p-6">
         <p class="mb-5 font-heading dark:text-gray-800 text-gray-400 font-medium text-xl">
           Full Stack Developer
@@ -13,7 +13,7 @@
         <div class="flex flex-wrap -m-3 mb-20">
           <div class="w-full lg:w-auto p-3">
             <button @click="$router.push('/work')"
-              class="font-heading w-full px-6 py-4 text-base text-gray-900 bg-yellow-300 hover:gray-100 rounded-md"
+              class="font-heading w-full px-6 py-4 text-base text-gray-900 bg-[#579BB1] hover:gray-100 rounded-md"
             >
               Check my Portfolio
             </button>
@@ -28,7 +28,7 @@
           <!-- Parent start -->
           <div class="w-full p-3">
             <div
-              class="mx-auto w-64 p-3 bg-yellow-300 transform hover:-translate-y-3 transition ease-out duration-1000 rounded-2xl"
+              class="mx-auto w-64 p-3 bg-[#E1D7C6] shadow-lg  transform hover:-translate-y-3 transition ease-out duration-1000 rounded-2xl"
             >
               <div class="flex -m-2">
                 <div class="w-auto p-2">
