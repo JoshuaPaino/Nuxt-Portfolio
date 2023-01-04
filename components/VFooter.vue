@@ -1,7 +1,7 @@
 
 
 <template>
-  <footer class="p-4 bg-gray-100 sm:p-6 dark:bg-gray-900">
+  <footer class="p-4 bg-gray-100 sm:p-6 dark:bg-[#372a2a]">
     <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
             <a href="#"  class="flex items-center">
@@ -12,7 +12,7 @@
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Site</h2>
-                <ul class="text-gray-600 dark:text-gray-400">
+                <ul class="text-gray-600 dark:text-gray-200">
                     <li
             v-for="navLink in Navlinks"
             :key="navLink.id"
@@ -26,21 +26,25 @@
             </div>
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow Me</h2>
-                <ul class="text-gray-600 dark:text-gray-400">
+                <ul class="text-gray-600 dark:text-gray-200">
                     <li class="mb-4">
-                        <a href="#"  class="hover:underline ">Github</a>
+                        <a href="#"  class="hover:underline  ">Github</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#"  class="hover:underline ">Twitter</a>
-                    </li>
-                    <li>
                         <a href="#"  class="hover:underline">Linkedin</a>
                     </li>
+                    <li class="mb-4">
+                        <a href="#"  class="hover:underline">Twitter</a>
+                    </li>
+                    <li >
+                        <a href="#"  class="hover:underline ">Blog</a>
+                    </li>
+                   
                 </ul>
             </div>
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Made with</h2>
-                <ul class="text-gray-600 dark:text-gray-400">
+                <ul class="text-gray-600 dark:text-gray-200">
                     <li class="mb-4">
                         <a href="https://nuxtjs.org/" target="_blank" class="hover:underline">Nuxt</a>
                     </li>
@@ -60,9 +64,9 @@
             </div>
         </div>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-400 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Made By <a href="https://flowbite.com/" class="hover:underline">Joshua Paino</a> 2023.        </span>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-200">Made By <a href="https://flowbite.com/" class="hover:underline">Joshua Paino</a> 2023.        </span>
         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
           <a target="_blank" v-for="socialLink in sociallinks" :key="socialLink.id" rel="noreferrer" :href="socialLink.to" :aria-label="socialLink.name"
 >
@@ -78,7 +82,6 @@ const Navlinks = [
 
   { id: 1, name: "Home", to: "/" },
   { id: 2, name: "Work", to: "/work" },
-  { id: 3, name: "Blog", to: "/blog" },
 
 ];
 const sociallinks = [
@@ -101,13 +104,13 @@ const sociallinks = [
 
 <style scoped>
 .router-link-exact-active {
-  color: blue;
+  @apply text-blue-700 dark:text-yellow-400;
 }
 .navStyle {
   @apply hover:text-gray-200 text-lg;
 }
 .socialStyle {
-  @apply text-gray-500 hover:text-gray-900 dark:hover:text-white text-3xl;
+  @apply text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white text-3xl;
 }
 
 </style>

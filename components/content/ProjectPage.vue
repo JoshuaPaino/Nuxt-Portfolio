@@ -7,7 +7,8 @@
       <div class="container mx-auto px-4">
         
         <div class="items-center flex flex-wrap">
-          <nuxt-link to="/work" class="mb-8 px-4">Go back</nuxt-link>
+
+          <nuxt-link to="/work" class="ml-4 mb-8 border border-black rounded-lg px-4">Go back</nuxt-link>
           <div class="w-full  ml-auto mr-auto px-4">
             
             <img

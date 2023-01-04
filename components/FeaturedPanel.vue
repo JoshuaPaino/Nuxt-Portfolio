@@ -3,7 +3,7 @@
     class="flex flex-wrap justify-center max-w-7xl mx-auto items-center w-full -m-6 pt-20 pb-40"
   >
     <div
-      class="w-full mx-auto p-6"
+      class="w-full mx-auto "
      
     >
       <slot />

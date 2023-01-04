@@ -5,7 +5,7 @@
     <svg
       v-if="$colorMode.value == 'dark'"
       xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6 text-gray-50"
+      class="h-6 w-6 text-gray-50 hover:text-yellow-200"
       viewBox="0 0 20 20"
       fill="currentColor"
     >
@@ -16,7 +16,7 @@
     <svg
       v-else
       xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6"
+      class="h-6 w-6 hover:text-yellow-700"
       viewBox="0 0 20 20"
       fill="currentColor"
     >

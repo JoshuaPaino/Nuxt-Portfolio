@@ -1,8 +1,8 @@
 <template>
   <div class="container px-4 mx-auto overflow-hidden">
     <section class="flex flex-wrap justify-between -m-6 pt-32 pb-40 lg:mb-10">
-      <div class="w-full lg:w-5/12 xl:w-1/2 p-6">
-        <p class="mb-5 font-heading dark:text-gray-800 text-gray-400 font-medium text-xl">
+      <div class="w-full lg:w-5/12 xl:w-1/2 p-6 lg:mt-20">
+        <p class="mb-5 font-heading dark:text-gray-200 text-gray-400 font-medium text-xl">
           Full Stack Developer
         </p>
         <h1
@@ -13,7 +13,7 @@
         <div class="flex flex-wrap -m-3 mb-20">
           <div class="w-full lg:w-auto p-3">
             <button @click="$router.push('/work')"
-              class="font-heading w-full px-6 py-4 text-base hover:bg-blue-300 hover:text-black text-white dark:text-gray-900 bg-[#579BB1] hover:gray-100 rounded-md"
+              class="font-heading w-full px-6 py-4 dark:bg-[#9E7676] dark:hover:bg-[#815B5B] text-base hover:bg-[#74b1c4]  text-white  bg-[#579BB1] hover:gray-100 rounded-md"
             >
               Check my Portfolio
             </button>
@@ -80,7 +80,7 @@
       </div>
     </section>
     <FeaturedPanel>
-      <p class="text-center tracking-widest text-gray-500 font-bold">
+      <p class="text-center tracking-widest text-gray-400 dark:text-gray-200 font-bold">
         Developer
       </p>
       <h2 class="text-center text-7xl  mb-14 font-bold">
@@ -90,17 +90,17 @@
         <div
           v-for="proj in featuredProjects"
           :key="proj.id"
-          class="w-full sm:w-1/2 p-4 lg:p-8"
+          class="w-full  p-4 lg:p-8 md:w-1/2"
         >
           <div class="w-full bg-[#E1D7C6] hover:bg-[#ECE8DD] shadow-lg rounded-lg overflow-hidden">
             <NuxtLink :to="`/work/${proj.id}`" >
             <img :alt="proj.name" :src="proj.image" />
             <div class="p-4">
-              <h3 class="text-2xl">{{ proj.name }}</h3>
-            <p class="text-xl mb-8">{{ proj.desc }}</p>
+              <h3 class="text-2xl dark:text-gray-800">{{ proj.name }}</h3>
+            <p class="text-xl mb-8 dark:text-gray-800">{{ proj.desc }}</p>
             
     
-        <p class="text-center text-sm underline font-bold">View Project</p>
+        <p class="text-center text-sm underline font-bold dark:text-gray-800">View Project</p>
             </div>
           </NuxtLink>
             
