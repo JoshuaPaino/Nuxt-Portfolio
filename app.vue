@@ -14,7 +14,7 @@ body {
   background-color: #f8f8fa;
   color: #55527c;
 
-  @apply dark:bg-[#594545] text-gray-800 dark:text-[#FFF8EA];
+  @apply dark:bg-gray-800 text-gray-800 dark:text-[#FFF8EA];
 }
 
 
