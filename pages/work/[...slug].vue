@@ -2,7 +2,7 @@
   <main>
     <ContentRenderer :value="data">
       <template #empty>
-        <p>No content found.</p>
+        <ContentError />
       </template>
     </ContentRenderer>
   

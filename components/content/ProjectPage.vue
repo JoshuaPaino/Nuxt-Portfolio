@@ -1,70 +1,65 @@
 <template>
-  
-  <div>
-   
-    <section class="h-full max-w-[800px] mx-auto w-full pt-5 pb-20 mb-2">
+  <div
+    class="flex h-auto w-full py-16 px-4 items-center justify-center xl:h-[80vh] xl:py-0"
+  >
+    <Layout>
+      <div class="flex flex-col-reverse gap-8 xl:flex-row">
+        <div class="w-full group xl:w-1/2">
+          <nuxt-img
+            format="webp"
+            :src="`${MdImage}`"
+            fit="cover"
+            :alt="`${MdImageName}`"
+            class="rounded-lg object-cover w-full transition-all group-hover:-rotate-2 transform-gpu duration-300 ease-in-out will-change-transform md:h-120 group-hover:scale-102"
+          />
+        </div>
 
-      <div class="container mx-auto px-4">
-        
-        <div class="items-center flex flex-wrap">
-
-          <nuxt-link to="/work" class="ml-4 mb-8 border border-black rounded-lg px-4">Go back</nuxt-link>
-          <div class="w-full  ml-auto mr-auto px-4">
-            
-            <img
-              :alt="`${MdImageName}`"
-              width="634"
-              height="400"
-              class="max-w-full h-[40vh] object-fill  w-full rounded-lg shadow-lg object-cover"
-              :src="`${MdImage}`"
-            />
-          
+        <div class="flex flex-col w-full gap-4 justify-center xl:w-1/2">
+          <div>
+            <nuxt-link
+              to="/work"
+              class="mb-8 border dark:hover:bg-gray-700 dark:border-[#FFF8EA] border-black rounded-lg px-4 hover:bg-gray-300"
+              >Go back</nuxt-link
+            >
           </div>
-          <div class="w-full  ml-auto mr-auto px-4">
-            <div class="md:pr-12">
-              <div
-                class="p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-800 dark:bg-white"
-              >
-              
-                <Icon :name="`${FrameworkIcon}`" class="cardLogo" />
-              </div>
-              <h3 class="text-3xl font-semibold">Project Name</h3>
-              <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                {{ ProjDesc}}
-              </p>
-             <div class="mt-4 mb-4 border flex flex-col text-center ">
-              <h3 class="text-3xl font-semibold">Tech Stack</h3>
-              <ul class="mt-4 flex flex-wrap gap-8 items-center justify-center text-center">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React</li>
-                <li>Sanity</li>
-                
-                <li>b</li>
-              </ul>
 
-             </div>
-             <div class="lg:flex flex-row w-full items-center gap-4">
-              <a :href="ViewLink" target="_blank" rel="noopener" class="lg:mt-4 md:w-1/2"><main-button>View Live</main-button></a>
-                <a :href="GitLink" class="w-1/2 "  target="_blank" rel="noopener"><button-overlay class=" mt-4">Visit Git</button-overlay></a>
-        
-             </div>
-            </div>
+          <h1 class="text-6xl">
+            {{ ProjTitle }}
+          </h1>
+          <p class="font-normal text-xl">
+            {{ ProjDesc }}
+            <br />
+            <br />
+            Tools used: {{ ToolsUsed }}
+          </p>
+          <div class="lg:flex flex-row w-full items-center gap-4">
+            <a
+              :href="ViewLink"
+              target="_blank"
+              rel="noopener"
+              class="lg:mt-4 md:w-1/2"
+              ><main-button>View Live</main-button></a
+            >
+            <a :href="GitLink" class="w-1/2" target="_blank" rel="noopener"
+              ><button-overlay class="mt-4">Visit Git</button-overlay></a
+            >
           </div>
         </div>
       </div>
-    </section>
+    </Layout>
   </div>
 </template>
 
 <script setup lang="ts">
+import Layout from "../Layout.vue";
 
 defineProps<{
-  ViewLink: string,
-  GitLink: string,
-  FrameworkIcon: string,
-  MdImage: string,
-  MdImageName: string,
-  ProjDesc: string,
-}>()
+  ViewLink: string;
+  GitLink: string;
+  MdImage: string;
+  MdImageName: string;
+  ToolsUsed: string;
+  ProjDesc: string;
+  ProjTitle: string;
+}>();
 </script>

@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   target: 'static',
     modules: [
-        '@nuxtjs/tailwindcss', 'nuxt-icon','@nuxtjs/color-mode',  '@vueuse/nuxt',    '@nuxt/content'
+        '@nuxtjs/tailwindcss', 'nuxt-icon','@nuxtjs/color-mode','@nuxt/image-edge',  '@vueuse/nuxt',    '@nuxt/content',
   ],  colorMode: {
         classSuffix: ''
       },
@@ -33,5 +33,5 @@ export default defineNuxtConfig({
                 href: "https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap"}
             ]
         }
-      }
+      },
 })
