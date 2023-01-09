@@ -28,7 +28,7 @@ import Socials from "../Socials.vue";
 import DarkModeButton from "./DarkModeButton.vue";
 const Navlinks = [
   { id: 1, name: "Work", to: "work" },
-  { id: 2, name: "Contact", to: "contact" },
+  { id: 2, name: "Design", to: "design" },
   
 ];
 

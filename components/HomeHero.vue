@@ -18,7 +18,7 @@
             </button>
           </div>
           <div class="w-full lg:w-auto p-3">
-            <ButtonOverlay @click="$router.push('/blog')" />
+            <ButtonOverlay @click="$router.push('/design')" />
           </div>
         </div>
       </div>
