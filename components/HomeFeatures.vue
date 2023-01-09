@@ -48,7 +48,7 @@ const featuredProjects = [
   },
   {
     id: 2,
-    name: "Metaverse Madness",
+    name: "GraphQL Rick and Morty",
     desc: "Portfolio I made to house the projects.",
     to: "next-metaverse",
     image: 'Metaverse',
