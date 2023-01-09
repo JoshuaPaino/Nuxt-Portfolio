@@ -51,7 +51,7 @@ const featuredProjects = [
     name: "GraphQL Rick and Morty",
     desc: "Portfolio I made to house the projects.",
     to: "next-metaverse",
-    image: 'Metaverse',
+    image: 'nextmeta',
     Icon:  "logos:nextjs-icon",
   },
   {
