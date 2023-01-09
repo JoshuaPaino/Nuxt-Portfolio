@@ -59,7 +59,7 @@ const featuredProjects = [
     name: "Music App",
     desc: "Portfolio I made to house the projects.",
     to: "nuxt-rickmorty",
-    image: 'Vuemusic',
+    image: 'music',
     Icon: "logos:vue",
   },
   {
