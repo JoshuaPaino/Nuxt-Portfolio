@@ -21,7 +21,7 @@ export default defineNuxtConfig({
 
         head:{
           
-            title: 'Application Head',
+            title: 'Joshua Paino',
             htmlAttrs: {
                 lang: 'en'
               },

@@ -16,10 +16,10 @@
 
         <div class="flex flex-col w-full gap-4 justify-center xl:w-1/2">
           <div>
-            <nuxt-link
-              to="/work"
+            <button
+             @click="$router.back()"
               class="mb-8 border dark:hover:bg-gray-700 dark:border-[#FFF8EA] border-black rounded-lg px-4 hover:bg-gray-300"
-              >Go back</nuxt-link
+              >Go back</button
             >
           </div>
 

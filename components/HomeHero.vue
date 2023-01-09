@@ -14,7 +14,7 @@
             <button @click="$router.push('/work')"
               class="font-heading w-full px-6 py-4 dark:bg-[#9E7676] dark:hover:bg-[#815B5B] text-base hover:bg-[#74b1c4]  text-white  bg-[#579BB1] hover:gray-100 rounded-md"
             >
-              Check my Portfolio
+              Check My Work
             </button>
           </div>
           <div class="w-full lg:w-auto p-3">

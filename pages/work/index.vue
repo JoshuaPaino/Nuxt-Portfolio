@@ -5,6 +5,11 @@ const { data: posts } = await useAsyncData("posts", () =>
 </script>
 
 <template>
+   <Head>
+      <Title>Joshua Paino's projects</Title>
+      <Meta name="description" content="Portfolio projects" />
+    </Head>
+
   <div class="max-w-7xl mx-auto">
     <p
       class="text-center mt-10 tracking-widest text-gray-400 dark:text-gray-200 font-bold"
