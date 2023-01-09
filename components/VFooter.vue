@@ -4,10 +4,10 @@
   <footer class="p-4 bg-gray-100 sm:p-6 dark:bg-gray-800">
     <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
-            <a href="#"  class="flex items-center">
-                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="FlowBite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Joshua</span>
-            </a>
+            <div   class="flex items-center">
+                <img src="https://flowbite.com/docs/images/logo.svg"  @click="scrollToTop()" class="h-8 mr-3" alt="FlowBite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"  @click="scrollToTop()">Joshua</span>
+            </div>
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
@@ -18,26 +18,21 @@
             :key="navLink.id"
             class="mb-4"
           >
-            <NuxtLink :to="navLink.to">{{ navLink.name }}</NuxtLink>
+            <NuxtLink  class="hover:underline" :to="navLink.to">{{ navLink.name }}</NuxtLink>
           </li>
-          <nuxt-link to="contact">Contact</nuxt-link>
+          <nuxt-link to="/design"  class="hover:underline">Design</nuxt-link>
                   
                 </ul>
             </div>
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow Me</h2>
                 <ul class="text-gray-600 dark:text-gray-200">
-                    <li class="mb-4">
-                        <a href="#"  class="hover:underline  ">Github</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#"  class="hover:underline">Linkedin</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#"  class="hover:underline">Twitter</a>
-                    </li>
+                  <li  v-for="socialLink in sociallinks" :key="socialLink.id" class="mb-4">
+                    <a target="_blank" rel="noreferrer" :href="socialLink.to" class="hover:underline"
+                      > {{ socialLink.name }}</a>
+                  </li>
                     <li >
-                        <a href="#"  class="hover:underline ">Blog</a>
+                        <a href="https://jostpaino.com" target="_blank" rel="noreferrer"  class="hover:underline ">Blog</a>
                     </li>
                    
                 </ul>
@@ -66,7 +61,7 @@
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-400 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-200">Made By <a href="https://flowbite.com/" class="hover:underline">Joshua Paino</a> 2023.        </span>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-200">Made By Joshua Paino 2023.</span>
         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
           <a target="_blank" v-for="socialLink in sociallinks" :key="socialLink.id" rel="noreferrer" :href="socialLink.to" :aria-label="socialLink.name"
 >
@@ -78,6 +73,9 @@
 </template>
 
 <script setup lang="ts">
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 const Navlinks = [
 
   { id: 1, name: "Home", to: "/" },
@@ -85,18 +83,18 @@ const Navlinks = [
 
 ];
 const sociallinks = [
-  { id: 1, name: "Github", Icon: "ri:github-fill", to: "https://github.com/" },
+  { id: 1, name: "Github", Icon: "ri:github-fill", to: "https://github.com/JoshuaPaino" },
   {
     id: 2,
     name: "Linkedin",
     Icon: "ri:linkedin-box-fill",
-    to: "https://www.linkedin.com/",
+    to: "https://www.linkedin.com/in/joshuapaino",
   },
   {
     id: 3,
     name: "Twitter",
     Icon: "ri:twitter-fill",
-    to: "https://twitter.com/",
+    to: "https://twitter.com/jostpaino",
   },
 ];
 

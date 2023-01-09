@@ -18,18 +18,18 @@
 
 
 const sociallinks = [
-  { id: 1, name: "Github", Icon: "ri:github-fill", to: "https://github.com/" },
+  { id: 1, name: "Github", Icon: "ri:github-fill", to: "https://github.com/JoshuaPaino" },
   {
     id: 2,
     name: "Linkedin",
     Icon: "ri:linkedin-box-fill",
-    to: "https://www.linkedin.com/",
+    to: "https://www.linkedin.com/in/joshuapaino",
   },
   {
     id: 3,
     name: "Twitter",
     Icon: "ri:twitter-fill",
-    to: "https://twitter.com/",
+    to: "https://twitter.com/jostpaino",
   },
 ];
 </script>
