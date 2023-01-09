@@ -7,7 +7,7 @@
         <div class="w-full group xl:w-1/2">
           <nuxt-img
             format="webp"
-            :src="`${MdImage}`"
+            :src="`/img/${MdImage}.png`"
             fit="cover"
             :alt="`${MdImageName}`"
             class="rounded-lg object-cover w-full transition-all group-hover:-rotate-2 transform-gpu duration-300 ease-in-out will-change-transform md:h-120 group-hover:scale-102"

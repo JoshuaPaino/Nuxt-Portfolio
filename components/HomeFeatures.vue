@@ -17,7 +17,7 @@
         <NuxtLink :to="`/work/${proj.to}`" >
           <div class="w-full bg-gray-200  justify-center my-auto mx-auto flex flex-col md:grid grid-cols-3  shadow-lg rounded-lg overflow-hidden">
            
-                <nuxt-img format="webp" :alt="proj.name" :src="proj.image" />
+                <nuxt-img format="webp" :alt="proj.name" :src="`/img/${proj.image}.png`" class="h-full overflow-hidden" />
        
             <div class="my-auto mx-auto p-4">
               <h3 class="text-2xl dark:text-gray-900 mb-2 font-bold text-center">{{ proj.name }}</h3>
@@ -43,7 +43,7 @@ const featuredProjects = [
     name: "JamStack Nuxt Portfolio",
     desc: "Portfolio I made to house the projects.",
     to: "megaportfolio",
-    image: '/img/Nuxtp.png',
+    image: 'Nuxtp',
     Icon: "logos:nuxt-icon",
   },
   {
@@ -51,7 +51,7 @@ const featuredProjects = [
     name: "Metaverse Madness",
     desc: "Portfolio I made to house the projects.",
     to: "next-metaverse",
-    image: '/img/Metaverse.png',
+    image: 'Metaverse',
     Icon:  "logos:nextjs-icon",
   },
   {
@@ -59,7 +59,7 @@ const featuredProjects = [
     name: "GraphQL Rick and Morty",
     desc: "Portfolio I made to house the projects.",
     to: "megaportfolio",
-    image: '/img/NuxtRickMorty.png',
+    image: 'NuxtRickMorty',
     Icon: "logos:nuxt-icon",
   },
   {
@@ -67,7 +67,7 @@ const featuredProjects = [
     name: "JamStack Nuxt Portfolio",
     desc: "Portfolio I made to house the projects.",
     to: "megaportfolio",
-    image: '/img/ReactGericht.png',
+    image: 'ReactGericht',
     Icon: "logos:react",
   },
 ];
