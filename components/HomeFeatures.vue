@@ -43,7 +43,7 @@ const featuredProjects = [
     name: "JamStack Nuxt Portfolio",
     desc: "Portfolio I made to house the projects.",
     to: "megaportfolio",
-    image: 'Nuxtp',
+    image: 'nuxtp',
     Icon: "logos:nuxt-icon",
   },
   {
