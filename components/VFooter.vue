@@ -20,8 +20,9 @@
           >
             <NuxtLink  class="hover:underline" :to="navLink.to">{{ navLink.name }}</NuxtLink>
           </li>
-          <nuxt-link to="/design"  class="hover:underline">Design</nuxt-link>
-                  
+          <li>
+            <nuxt-link to="/design"  class="hover:underline">Design</nuxt-link>
+          </li>                  
                 </ul>
             </div>
             <div>

@@ -17,7 +17,7 @@
         <NuxtLink :to="`/work/${proj.to}`" >
           <div class="w-full bg-gray-200  justify-center my-auto mx-auto flex flex-col md:grid grid-cols-3  shadow-lg rounded-lg overflow-hidden">
            
-                <nuxt-img format="webp" :alt="proj.name" :src="`/img/${proj.image}.png`" class="h-full overflow-hidden" />
+                <nuxt-img format="webp" width="100%" height="100%" :alt="proj.name" :src="`/img/${proj.image}.png`" class="h-full overflow-hidden" />
        
             <div class="my-auto mx-auto p-4">
               <h3 class="text-2xl dark:text-gray-900 mb-2 font-bold text-center">{{ proj.name }}</h3>
