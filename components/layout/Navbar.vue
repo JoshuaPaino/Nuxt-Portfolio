@@ -2,7 +2,7 @@
   <header>
     <nav class="flex items-center justify-between px-8 py-5">
       <NuxtLink to="/">Joshua</NuxtLink>
-      <div class="w-auto">
+      <div class="w-auto flex flex-row">
         <ul class="flex items-center">
           <li
             v-for="navLink in Navlinks"
@@ -15,10 +15,10 @@
           <div class="hidden md:block">
             <Socials />
           </div>
-         
-          <DarkModeButton />
         </ul>
+        <DarkModeButton />
       </div>
+   
     </nav>
   </header>
 </template>
