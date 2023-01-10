@@ -4,7 +4,7 @@
   <div class="mx-auto max-w-7xl py-12 px-6 rounded-lg sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
       <span class="block dark:text-gray-200 ">Want to chat?</span>
-      <span class="block  dark:text-[#FFF8EA]">Contact me via Email or Linkedin.</span>
+      <span class="block text-[#579BB1] dark:text-[#FFF8EA]">Contact me via Email or Linkedin.</span>
     </h2>
     <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
       <div class="inline-flex rounded-md shadow">
