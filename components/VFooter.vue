@@ -12,23 +12,23 @@
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Site</h2>
-                <ul class="text-gray-600 dark:text-gray-200">
+                <ul class="text-coloring">
                     <li
             v-for="navLink in Navlinks"
             :key="navLink.id"
-            class="mb-4"
+            class="mb-4" 
           >
             <NuxtLink  class="hover:underline" :to="navLink.to">{{ navLink.name }}</NuxtLink>
           </li>
           <li>
-            <nuxt-link to="/design"  class="hover:underline">Design</nuxt-link>
+            <nuxt-link to="/design"  class="hover:underline ">Design</nuxt-link>
           </li>
                   
                 </ul>
             </div>
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow Me</h2>
-                <ul class="text-gray-600 dark:text-gray-200">
+                <ul class="text-coloring">
                   <li  v-for="socialLink in sociallinks" :key="socialLink.id" class="mb-4">
                     <a target="_blank" rel="noreferrer" :href="socialLink.to" class="hover:underline"
                       > {{ socialLink.name }}</a>
@@ -41,7 +41,7 @@
             </div>
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Made with</h2>
-                <ul class="text-gray-600 dark:text-gray-200">
+                <ul class="text-coloring">
                     <li class="mb-4">
                         <a href="https://nuxtjs.org/" target="_blank" class="hover:underline">Nuxt</a>
                     </li>
@@ -110,6 +110,9 @@ const sociallinks = [
 }
 .socialStyle {
   @apply text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white text-3xl;
+}
+.text-coloring {
+  @apply text-gray-800 dark:text-gray-200
 }
 
 </style>

@@ -11,7 +11,7 @@
         <a href="mailto:joshua.paino@gmail.com" class="inline-flex items-center justify-center rounded-md border border-transparent bg-[#579BB1] px-5 py-3 text-base font-medium dark:bg-[#9E7676] dark:hover:bg-[#815B5B] text-white  hover:bg-[#74b1c4]">Email</a>
       </div>
       <div class="ml-3 inline-flex rounded-md shadow">
-        <a href="https://www.linkedin.com/in/joshuapaino" class="inline-flex items-center justify-center rounded-md border border-transparent dark:bg-gray-200 dark:text-gray-800 bg-gray-800 text-white px-5 py-3 text-base font-medium dark:hover:bg-gray-300  hover:bg-gray-700">Linkedin</a>
+        <a href="" class="inline-flex items-center justify-center rounded-md border border-transparent dark:bg-gray-200 dark:text-gray-800 bg-gray-800 text-white px-5 py-3 text-base font-medium dark:hover:bg-gray-300  hover:bg-gray-700">Linkedin</a>
       </div>
     </div>
   </div>

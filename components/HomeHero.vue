@@ -33,7 +33,7 @@
                   <Icon :name="codeRow1.Icon" class="cardLogo" />
                 </div>
                 <div class="w-auto p-2">
-                  <p class="font-heading text-base text-gray-900">
+                  <p class="font-heading text-base text-gray-900 font-bold">
                     {{ codeRow1.techName }}
                   </p>
                   <p class="mb-2 text-sm text-gray-800">
