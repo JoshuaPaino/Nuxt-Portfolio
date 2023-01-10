@@ -1,11 +1,11 @@
 <template>
     <section class="flex flex-wrap justify-between -m-6 pt-32 pb-40 lg:mb-10">
       <div class="w-full lg:w-5/12 xl:w-1/2 p-6 lg:mt-20">
-        <p class="mb-5 font-heading dark:text-gray-200 text-gray-400 font-medium text-xl">
+        <p class="mb-5 font-heading dark:text-gray-200 text-gray-900 font-medium text-xl">
           Full Stack Developer
         </p>
         <h1
-          class="mb-14 font-heading text-7xl md:text-8xl xl:text-11xl font-bold"
+          class="mb-14 text-7xl md:text-8xl xl:text-11xl font-bold"
         >
           Joshua Paino
         </h1>
@@ -14,7 +14,7 @@
             <button @click="$router.push('/work')"
               class="font-heading w-full px-6 py-4 dark:bg-[#9E7676] dark:hover:bg-[#815B5B] text-base hover:bg-[#74b1c4]  text-white  bg-[#579BB1] hover:gray-100 rounded-md"
             >
-              Check My Work
+              <p>Check My Work</p>
             </button>
           </div>
           <div class="w-full lg:w-auto p-3">
@@ -36,7 +36,7 @@
                   <p class="font-heading text-base text-gray-900">
                     {{ codeRow1.techName }}
                   </p>
-                  <p class="mb-2 text-sm text-gray-500">
+                  <p class="mb-2 text-sm text-gray-800">
                     {{ codeRow1.techDetails }}
                   </p>
                 </div>

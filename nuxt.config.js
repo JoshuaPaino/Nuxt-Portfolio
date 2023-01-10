@@ -15,12 +15,16 @@ export default defineNuxtConfig({
         viewer: true,
       },
       buildModules: [
-        '@nuxt/image',
+        '@nuxt/image',    '@nuxtjs/google-fonts',
       ],
+      googleFonts: {
+        families: {
+          Rubik: true,
+          Lora: [500],
+        }
+      },
       app:{
-
-        head:{
-          
+        head:{          
             title: 'Joshua Paino',
             htmlAttrs: {
                 lang: 'en'
@@ -28,10 +32,6 @@ export default defineNuxtConfig({
             meta: [
                 {name: 'description', content: "My Portfolio"}
             ],
-            link: [
-                { rel: "stylesheet",
-                href: "https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap"}
-            ]
         }
       },
 })

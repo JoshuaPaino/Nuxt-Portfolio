@@ -2,7 +2,7 @@
  
 
     <FeaturedPanel>
-      <p class="text-center tracking-widest text-gray-400 dark:text-gray-200 font-bold">
+      <p class="text-center tracking-widest text-gray-900 dark:text-gray-200 font-bold">
         Developer
       </p>
       <h2 class="text-center text-7xl  mb-14 font-bold">
