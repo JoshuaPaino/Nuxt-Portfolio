@@ -7,7 +7,7 @@
               </NuxtLink>
               
             <div class="flex flex-col py-2">
-                <h2 class="text-lg w-full  inline">
+                <h2 class="text-lg w-full  inline font-bold">
                     {{post.title}}
                 </h2>
                 <p class="text-base w-full text-gray-600 dark:text-gray-200 inline">
