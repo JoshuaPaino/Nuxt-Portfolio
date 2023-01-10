@@ -63,7 +63,7 @@
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-400 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-200">Made By Joshua Paino 2023.</span>
+        <span class="text-sm text-gray-900 sm:text-center dark:text-gray-200">Made By Joshua Paino 2023.</span>
         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
          <ul class="flex gap-6">
           <socials />
