@@ -22,7 +22,8 @@
           </li>
           <li>
             <nuxt-link to="/design"  class="hover:underline">Design</nuxt-link>
-          </li>                  
+          </li>
+                  
                 </ul>
             </div>
             <div>
@@ -64,10 +65,9 @@
     <div class="sm:flex sm:items-center sm:justify-between">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-200">Made By Joshua Paino 2023.</span>
         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-          <a target="_blank" v-for="socialLink in sociallinks" :key="socialLink.id" rel="noreferrer" :href="socialLink.to" :aria-label="socialLink.name"
->
-<Icon :name="socialLink.Icon" class="socialStyle" />
-</a>
+         <ul class="flex gap-6">
+          <socials />
+         </ul>
         </div>
     </div>
 </footer>

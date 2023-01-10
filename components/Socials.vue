@@ -1,9 +1,9 @@
 <template>
-    
-          <a
+    <li v-for="socialLink in sociallinks"
+            :key="socialLink.id">
+      <a
             target="_blank"
-            v-for="socialLink in sociallinks"
-            :key="socialLink.id"
+           
             rel="noreferrer"
             class="navMargin"
             :href="socialLink.to"
@@ -11,6 +11,8 @@
           >
             <Icon :name="socialLink.Icon" class="socialStyle" />
           </a>
+    </li>
+          
     
 </template>
 
@@ -44,7 +46,5 @@ const sociallinks = [
 .socialStyle {
   @apply hover:text-[#579BB1] text-3xl;
 }
-.navMargin {
-  @apply mr-9;
-}
+
 </style>

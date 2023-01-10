@@ -1,5 +1,5 @@
 <template>
-  <button aria-label="ThemeToggler"
+  <button aria-label="ThemeToggler" class="lg:ml-8 "
     @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')"
   >
     <svg

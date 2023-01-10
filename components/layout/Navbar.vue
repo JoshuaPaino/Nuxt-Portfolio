@@ -11,11 +11,11 @@
           >
             <NuxtLink :to="`/${navLink.to}`">{{ navLink.name }}</NuxtLink>
           </li>
-      
-          <div class="hidden md:block">
-            <Socials />
-          </div>
         </ul>
+        <ul class="md:flex hidden gap-8">
+          <Socials />
+        </ul>
+      
         <DarkModeButton />
       </div>
    
