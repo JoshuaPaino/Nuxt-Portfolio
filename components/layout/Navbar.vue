@@ -41,11 +41,9 @@ const Navlinks = [
 }
 
 .navStyle {
-  @apply hover:text-gray-200 text-lg;
+  @apply hover:text-[#579BB1] text-lg;
 }
-.socialStyle {
-  @apply hover:text-gray-200 text-3xl;
-}
+
 .navMargin {
   @apply mr-2 sm:mr-4 md:mr-9;
 }

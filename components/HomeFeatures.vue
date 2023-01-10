@@ -49,7 +49,7 @@ const featuredProjects = [
   {
     id: 2,
     name: "Metaverse Madness",
-    desc: "Portfolio I made to house the projects.",
+    desc: "Frontend portfolio project using NextJS and Framer-motion as the animation library to create a modern website.",
     to: "next-metaverse",
     image: 'nextmeta',
     Icon:  "logos:nextjs-icon",
@@ -57,7 +57,7 @@ const featuredProjects = [
   {
     id: 3,
     name: "Music App",
-    desc: "Portfolio I made to house the projects.",
+    desc: "Full-stack portfolio project using Vue3 as the front-end and Firebase as the backend.",
     to: "vue-music",
     image: 'music',
     Icon: "logos:vue",
@@ -65,7 +65,7 @@ const featuredProjects = [
   {
     id: 4,
     name: "Gericht",
-    desc: "Portfolio I made to house the projects.",
+    desc: "Front-end portfolio project using React.",
     to: "react-gericht",
     image: 'ReactGericht',
     Icon: "logos:react",

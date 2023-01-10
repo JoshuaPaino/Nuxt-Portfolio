@@ -40,9 +40,6 @@ const sociallinks = [
 .router-link-exact-active {
   color: blue;
 }
-.navStyle {
-  @apply hover:text-gray-200 text-lg;
-}
 .socialStyle {
   @apply hover:text-[#579BB1] text-3xl;
 }

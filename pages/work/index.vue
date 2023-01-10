@@ -6,7 +6,7 @@ const { data: posts } = await useAsyncData("posts", () =>
 
 <template>
    <Head>
-      <Title>Joshua Paino's projects</Title>
+      <Title>Joshua Paino | Work</Title>
       <Meta name="description" content="Portfolio projects" />
     </Head>
 

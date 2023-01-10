@@ -140,7 +140,7 @@ const codeRow3 = [
     id: 1,
     Icon: "logos:nuxt-icon",
     techName: "NuxtJS",
-    techDetails: "Full-Stack Framework",
+    techDetails: "Front-End Framework",
   },
   {
     id: 2,
@@ -154,7 +154,7 @@ const codeRow4 = [
     id: 1,
     Icon: "logos:nextjs-icon",
     techName: "NextJS",
-    techDetails: "Front-End Framework",
+    techDetails: "Full-Stack  Framework",
   },
   {
     id: 2,
