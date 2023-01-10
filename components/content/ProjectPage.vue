@@ -7,6 +7,7 @@
         <div class="w-full group xl:w-1/2">
           <nuxt-img
             format="webp"
+            loading="lazy"
             :src="`/img/${MdImage}.png`"
             fit="cover"
             :alt="`${MdImageName}`"
