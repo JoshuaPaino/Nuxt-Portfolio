@@ -36,12 +36,10 @@
           <div class="lg:flex flex-row w-full items-center gap-4">
             <a
               :href="ViewLink"
-              target="_blank"
-              rel="noopener"
               class="lg:mt-4 md:w-1/2"
               ><main-button>View Live</main-button></a
             >
-            <a :href="GitLink" class="w-1/2" target="_blank" rel="noopener"
+            <a :href="GitLink" class="w-1/2"
               ><button-overlay class="mt-4">Visit Git</button-overlay></a
             >
           </div>
